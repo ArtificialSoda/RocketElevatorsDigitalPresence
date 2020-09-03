@@ -5174,17 +5174,24 @@ section.dark .btn-default {
 	height:40px;
 }
 .btn-sm,
-.btn-sm,
 .btn-lg,
 .btn-xlg {
 	height:auto;
 }
 
 .btn-sm:hover,
-.btn-sm:hover,
 .btn-lg:hover,
 .btn-xlg:hover {
+	height: auto;
+	background-color: var(--rocketbluehover);
+}
+
+
+.btn-sm:active,
+.btn-lg:active,
+.btn-xlg:active {
 	height:auto;
+	color: rgb(255, 255, 255);
 	background-color: var(--rocketbluehover);
 }
 
