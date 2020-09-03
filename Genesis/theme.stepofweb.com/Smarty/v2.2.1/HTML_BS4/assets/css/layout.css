@@ -50,6 +50,12 @@
 
 /** Globals
  **************************************************************** **/
+:root {
+	--rocketred: #d3203e;
+	--rocketblue: rgb(25, 128, 182);
+	--rocketblueborder: #1980B6;
+	--rocketbluehover: #073261; 
+}
 html, body {
 	height:100%;
 	direction: ltr;
