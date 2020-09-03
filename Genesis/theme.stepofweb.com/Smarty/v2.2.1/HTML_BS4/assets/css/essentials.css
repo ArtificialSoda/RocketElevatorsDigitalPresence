@@ -5180,6 +5180,14 @@ section.dark .btn-default {
 	height:auto;
 }
 
+.btn-sm:hover,
+.btn-sm:hover,
+.btn-lg:hover,
+.btn-xlg:hover {
+	height:auto;
+	background-color: var(--rocketbluehover);
+}
+
 a.btn.btn-sm {
 	line-height:inherit;
 }
