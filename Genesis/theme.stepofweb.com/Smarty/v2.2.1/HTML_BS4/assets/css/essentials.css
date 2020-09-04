@@ -5447,11 +5447,17 @@ a.btn.btn-sm {
 	border-color: var(--rocketblueborder);
 }
 
+@keyframes btn-animation1 {
+	0% {width: 100%; height: 100%;}
+	50% {width: 105%; height: 102%;}
+	100% {width: 100%; height: 100%;}
+}
 
-
-
-
-
+.slider .btn-warning:hover{
+	animation-name: btn-animation1;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
 
 /**	19. Counters & Countdown
 *************************************************** **/
