@@ -161,6 +161,15 @@
 	.pagination>.active>a:hover {
 		border-color: #1980B6;
 	}
+	.btn-warning {
+		background-color: var(--rocketblue);
+		border-color: var(--rocketblueborder);
+		border-width: 2px;
+	}
+	.btn-warning:hover, .btn-warning:focus, .btn-warning:active{
+		background-color: var(--rocketbluehover);
+		border-color: var(--rocketblueborder);
+	}
 
 	#topNav ul.dropdown-menu { /* submenu border top color */
 		border-top-color:#1980B6;
