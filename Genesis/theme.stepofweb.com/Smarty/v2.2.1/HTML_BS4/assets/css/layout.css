@@ -1341,6 +1341,9 @@ section.dark.page-header ul.page-options a {
 		 -o-transition: all .300s;
 			transition: all .300s;
 }
+#header .logo:hover {
+	opacity: 0.6;
+}
 #header a.logo.logo-responsive>img {
 	height:100%; /* used on center - example: page-coming-soon-1.html */
 }
@@ -4011,13 +4014,6 @@ body.menu-vertical #mainMenu.sidebar-vertical .navbar-collapse>ul.nav.navbar-nav
 	font-family: "fontawesome";
 	content: "\f102";
 }
-
-
-
-
-
-
-
 
 /** Preloader
  **************************************************************** **/
@@ -9160,6 +9156,17 @@ section.dark-2 div.category-grid .card {
 #footer .btn-lg,
 #footer .btn-xlg {
 	height:auto;
+}
+
+#footer .btn-success
+{
+	background-color: var(--rocketblue);
+	border-color: var(--rocketblueborder);
+}
+
+#footer .btn-success:hover
+{
+	background-color: var(--rocketbluehover);
 }
 
 
