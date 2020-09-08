@@ -12083,8 +12083,8 @@ div.testimonial p {
 }
 
 div.testimonial>figure>img {
-	width:65px;
-	height:65px;
+	width:150px;
+	height:150px;
 
 	-webkit-border-radius: 3px;
 	   -moz-border-radius: 3px;
@@ -15330,4 +15330,11 @@ h1:before,h2:before,h3:before,h4:before,h5:before,h6:before {
 		padding: 30px 10px 50px 10px !important;
 		background-color: rgba(0,0,0,0.01);
 	}
+}
+
+/* Button for the Residential and Corporate landing page that is under the 'Welcome' section explaining how the quote request process works *****/
+/* Button for the Residential and Corporate landing page that takes you back to Main page Contact Section ***************************************/
+.altquotebtn:hover, .altquotebtn-v2:hover, .btn-to-contact:hover {
+	background-color: var(--rocketblue);
+	border: 1px solid var(--rocketblueborder);
 }
