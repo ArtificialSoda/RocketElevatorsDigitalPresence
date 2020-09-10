@@ -9466,4 +9466,15 @@ section.dark-2 div.category-grid .card {
 	   color: black;
 	   opacity: 1;
    }
+   
+   /* QUOTE FORM PAGE *******/
+   /* Radio Buttons */
+   .radiodiv {
+	   display: inline-block;
+	   text-align: center;
+	   margin-right: 15px;
+   }
+   .radio-label {
+	   display: block;
+   }
 
