@@ -1306,6 +1306,7 @@ img.image-bw {
 	filter: gray; /* IE6-9 */
 	-webkit-filter: grayscale(99%); /* Chrome 19+ & Safari 6+ */
 	-webkit-backface-visibility: hidden;  /* Fix for transition flickering */
+	backface-visibility: hidden;
 }
 
 
@@ -5075,6 +5076,20 @@ body:not(.device-touch) .btn.btn-reveal span {
 		width: 38px;
 		height: 53px;
 		line-height: 46px;
+	}
+	@media only screen and (min-device-width: 375px) and (max-device-width: 812)
+	{
+		.btn.btn-reveal.btn-lg { 
+			padding-left:22px; 
+			padding-right:22px; 
+		}
+		.btn.btn-reveal.btn-lg i {
+			left: -22px;
+			width: 22px;
+			height: 22px;
+			line-height: 20px;
+			font-size: 12px;
+		}
 	}
 	/* extra large */
 	.btn.btn-reveal.btn-xlg { 
