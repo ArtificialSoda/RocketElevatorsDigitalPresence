@@ -9462,3 +9462,22 @@ section.dark-2 div.category-grid .card {
 	   display: block;
    }
 
+/** Responsiveness - Slider  **/
+
+/* Mobile Size*/
+@media screen and (max-width:1024px) {
+	.slider-btn {
+		padding: 5px 8px 5px 8px;
+		font-size: 9px !important;
+	}
+	.slider-text {
+		font-size: 10px;
+	}
+}
+
+/* Desktop size */
+@media screen and (min-width:1025px) {
+	.slider {
+		/*font-size: 1.2em;*/
+	}
+}
