@@ -11,11 +11,6 @@ $(document).ready(function(){
 
     var buildingType = "";      // Building type
       
-    var totalElevators = 0;     // Estimated number of elevator shafts
-    var elevatorsCost = 0;      // Elevators cost, based on product line (Stnd, Premium, Excelium) without install fee
-    var installationCost = 0;   // Installation cost, based on product line
-    var totalCost = 0;          // Total estimate cost
-
     /* Do this after client has clicked on the Confirm button ***/
     var confirmBtn = $("#building-confirm-btn");
     confirmBtn.click(function(){
@@ -72,14 +67,14 @@ $(document).ready(function(){
             case "Residential":
                 numDivsToShow = 3;
                 q1Label.text("The number of apartments in the building");
-                q2Label.text("The number of floors contained in the building");
+                q2Label.text("The number of floors contained in the building (including basements)");
                 q3Label.text("The number of basements contained in the building");
                 break;
             
             case "Commercial":
                 numDivsToShow = 5;
                 q1Label.text("The number of distinct businesses");
-                q2Label.text("The number of floors contained in the building");
+                q2Label.text("The number of floors contained in the building (including basements)");
                 q3Label.text("The number of basements contained in the building");
                 q4Label.text("The number of parking space available");
                 q5Label.text("The number of elevators cages to be deployed");
@@ -88,7 +83,7 @@ $(document).ready(function(){
             case "Corporate":
                 numDivsToShow = 5;
                 q1Label.text("The number of separate tenant companies");
-                q2Label.text("The number of floors contained in the building");
+                q2Label.text("The number of floors contained in the building (including basements)");
                 q3Label.text("The number of basements contained in the building");
                 q4Label.text("The number of parking space available");
                 q5Label.text("The maximum number of occupants per floor");
@@ -97,7 +92,7 @@ $(document).ready(function(){
             case "Hybrid":
                 numDivsToShow = 6;
                 q1Label.text("The number of distinct businesses");
-                q2Label.text("The number of floors contained in the building");
+                q2Label.text("The number of floors contained in the building (including basements)");
                 q3Label.text("The number of basements contained in the building");
                 q4Label.text("The number of parking space available");
                 q5Label.text("The maximum number of occupants per floor");
@@ -117,7 +112,9 @@ $(document).ready(function(){
 
         // Resets results if 'Confirm' button is pressed again
         $("#num-shafts").val(0);
-        $("#total-estimate").val(0);
+        $("#elevator-price").val("$0.00");
+        $("#installation-price").val("$0.00");
+        $("#total-estimate").val("$0.00");
 
     })
 
@@ -150,7 +147,7 @@ $(document).ready(function(){
         if (buildingType === "Residential")
         {
             // Make HTTP POST request to server with client input
-            $.post("/residential",
+            $.post(" https://safe-depths-50027.herokuapp.com/residential",
                 {   
                     numApartments: parseInt($("#question-1").val()),
                     numFloors: parseInt($("#question-2").val()),
@@ -172,7 +169,7 @@ $(document).ready(function(){
         else if (buildingType === "Commercial")
         {
             // Make HTTP POST request to server with client input
-            $.post("/commercial",
+            $.post(" https://safe-depths-50027.herokuapp.com/commercial",
             {   
                 numCages: parseInt($("#question-5").val()),
                 unitBasePrice: unitBasePrice,
@@ -192,7 +189,7 @@ $(document).ready(function(){
         else 
         {
             // Make HTTP POST request to server with client input
-            $.post("/corporate-hybrid",
+            $.post(" https://safe-depths-50027.herokuapp.com/corporate-hybrid",
                 {   
                     numOccupantsPerFloor: parseInt($("#question-5").val()),
                     numFloors: parseInt($("#question-2").val()),

@@ -328,7 +328,7 @@
                         <fieldset>
                             <div class="row justify-content-center mb-10">
                                 <div class="col-md-6 ml-20 mr-20">
-                                    <label for="building">Building Type</label>
+                                    <label for="building">BUILDING TYPE</label>
                                     <select id="building-type" class="form-control pointer" name="building">
                                         <option value="Residential">Residential</option>
                                         <option value="Corporate">Corporate</option>
@@ -395,7 +395,7 @@
                         <fieldset>
                             <div class="row justify-content-center">
                                 <div class="col-md-6 ml-20 mr-20">
-                                    <label for="num-shafts">Estimated number of elevators needed</label>
+                                    <label for="num-shafts">NUMBER OF ELEVATORS NEEDED</label>
                                     <input readonly required type="number" value="" min="0" class="form-control" name="num-shafts" id="num-shafts">
                                 </div>
                             </div> 
@@ -407,7 +407,7 @@
                         <fieldset>
                             <div class="row justify-content-center">
                                 <div class="radiodiv">
-                                    <input type="radio" id="standard" name="product-line" value="standard">
+                                    <input type="radio" id="standard" name="product-line" value="standard" checked>
                                     <label class="radio-label"for="standard">Standard</label><br>
                                 </div>
                                 <div class="radiodiv">
@@ -420,22 +420,23 @@
                                 </div>
                             </div>
                             <div class="row justify-content-center">
-                                <div class="col-sm-6 col-md-6 col-lg-3 ml-20 mr-20">
-                                    <label for="elevator-price">Elevator cost ($)</label>
-                                    <input readonly required type="number" value="" min="0" class="form-control" name="elevator-price" id="elevator-price">
-                                </div>
-                                <div class="col-sm-6 col-md-6 col-lg-3 ml-20 mr-20">
-                                    <label for="installation-price">Installation cost ($)</label>
-                                    <input readonly required type="number" value="" min="0" class="form-control" name="installation-price" id="installation-price">
+                                <div class="col-md-6 ml-20 mr-20">
+                                    <label for="elevator-price">ELEVATOR COST</label>
+                                    <input readonly required type="text" value="$0.00" class="form-control" name="elevator-price" id="elevator-price">
+								</div>
+							</div>
+							<div class="row justify-content-center">
+                                <div class="col-md-6 ml-20 mr-20">
+                                    <label for="installation-price">INSTALLATION COST</label>
+                                    <input readonly required type="text" value="$0.00" class="form-control" name="installation-price" id="installation-price">
                                 </div>
                             </div>
                             <div class="row justify-content-center">
                                 <div class="col-md-6 ml-20 mr-20">
-                                    <label for="total-estimate">Total cost estimate ($)</label>
-                                    <input readonly required type="number" value="" min="0" class="form-control" name="total-estimate" id="total-estimate">
+                                    <label for="total-estimate">TOTAL COST ESTIMATE</label>
+                                    <input readonly required type="text" value="$0.00" class="form-control" name="total-estimate" id="total-estimate">
                                 </div>
                             </div> 
-
                         </fieldset>
                     </form>
                 </div>
