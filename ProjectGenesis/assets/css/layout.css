@@ -9463,21 +9463,44 @@ section.dark-2 div.category-grid .card {
    }
 
 /** Responsiveness - Slider  **/
-
-/* Mobile Size*/
-@media screen and (max-width:1024px) {
+/* Mid-Large Size */
+@media screen and (max-width:1500px) {
 	.slider-btn {
-		padding: 5px 8px 5px 8px;
+		padding: 8px 12px 8px 12px;
+		font-size: 12px !important;
+	}
+	.slider-text {
+		font-size: 22px !important;
+	}
+}
+/* Tablet Size */
+@media screen and (max-width:1050px) {
+	.slider-btn {
+		padding: 4px 6px 4px 6px;
 		font-size: 9px !important;
 	}
 	.slider-text {
-		font-size: 10px;
+		font-size: 17px !important;
 	}
 }
 
-/* Desktop size */
-@media screen and (min-width:1025px) {
-	.slider {
-		/*font-size: 1.2em;*/
+/* Mobile Size */
+@media screen and (max-width:580px) {
+	.slider-btn{
+		display: none !important;
+	}
+	.slider-text {
+		font-size: 12px !important;
 	}
 }
+
+/* Extra-small mobile size */
+@media screen and (max-width:380px) {
+	.slider-btn, .callout{
+		display: none !important;
+	}
+	.slider-text {
+		font-size: 7px !important;
+	}
+}
+
